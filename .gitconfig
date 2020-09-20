@@ -1,0 +1,8 @@
+[alias] prettylog = ! git log --pretty=oneline -abbrev-commit --graph --decorate --all
+  co = checkout
+  b = branch
+  c = commit
+  s = status -s
+  a = add -A
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
