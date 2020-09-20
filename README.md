@@ -1,6 +1,6 @@
-# 🧰 dotfiles
+# dotfiles
 
-## Software
+## software
 
 - [Fish](http://fishshell.com/)
 - [Starship](https://starship.rs/)
