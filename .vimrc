@@ -12,6 +12,13 @@ filetype indent on
 syntax on
 syntax enable
 
+if has('gui_running')
+  set background=light
+  colorscheme solarized
+else
+  set background=dark
+endif
+
 set backspace=indent,eol,start
 set guioptions-=m
 set guioptions-=T
