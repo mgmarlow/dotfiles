@@ -5,6 +5,8 @@ call plug#begin('~/vimfiles/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'junegunn/goyo.vim'
 Plug 'reedes/vim-pencil'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()
 
 filetype plugin on
