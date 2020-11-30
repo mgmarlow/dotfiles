@@ -3,6 +3,8 @@
 ## setup vim
 
 ```
+gh repo clone mgmarlow/dotfiles
+cd ./dotfiles
 ./setup
 ```
 
