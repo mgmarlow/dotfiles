@@ -1,5 +1,11 @@
 # dotfiles
 
+## setup vim
+
+```
+./setup
+```
+
 ## software
 
 - [Fish](http://fishshell.com/)
