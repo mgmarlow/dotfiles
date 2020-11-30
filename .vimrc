@@ -1,3 +1,4 @@
+" Better % matching for do...end blocks
 runtime macros/matchit.vim
 
 set nocompatible
