@@ -17,3 +17,4 @@ cd ./dotfiles
 - [vim](https://www.vim.org/) and [VimPlug](https://github.com/junegunn/vim-plug)
 - [yarn](https://yarnpkg.com/)
 - [Hack font](https://sourcefoundry.org/hack/)
+- [jrnl](https://jrnl.sh/en/stable/)
