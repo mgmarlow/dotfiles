@@ -37,6 +37,7 @@ set backspace=indent,eol,start
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
+set nu
 
 set expandtab
 set tabstop=2
