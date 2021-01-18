@@ -1,4 +1,5 @@
-[alias] prettylog = ! git log --pretty=oneline -abbrev-commit --graph --decorate --all
+[alias]
+  prettylog = ! git log --pretty=oneline -abbrev-commit --graph --decorate --all
   co = checkout
   b = branch
   c = commit
