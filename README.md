@@ -10,11 +10,11 @@ cd ./dotfiles
 
 ## software
 
-- [Fish](http://fishshell.com/)
-- [Starship](https://starship.rs/)
 - [iTerm2](https://iterm2.com/)
-- [spectacle](https://www.spectacleapp.com/)
+- [Fish](http://fishshell.com/)
+- [Hack](https://sourcefoundry.org/hack/)
+- [Starship](https://starship.rs/)
+- [rectangle](https://rectangleapp.com/)
 - [vim](https://www.vim.org/) and [VimPlug](https://github.com/junegunn/vim-plug)
 - [yarn](https://yarnpkg.com/)
-- [Hack font](https://sourcefoundry.org/hack/)
 - [jrnl](https://jrnl.sh/en/stable/)
