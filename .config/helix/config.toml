@@ -1,0 +1,3 @@
+# .config/helix/config.toml
+[keys.insert]
+j = { j = "normal_mode" }
