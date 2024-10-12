@@ -1,0 +1,9 @@
+[user]
+name = Graham Marlow
+
+[alias]
+  s = status -s
+  a = add -A
+
+[core]
+	editor = hx
