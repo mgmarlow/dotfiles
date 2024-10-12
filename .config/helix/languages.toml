@@ -1,0 +1,3 @@
+[[language]]
+name = "typescript"
+formatter = { command = "npx", args = ["prettier", "--parser", "typescript"] }
