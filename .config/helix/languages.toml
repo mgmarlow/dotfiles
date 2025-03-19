@@ -1,3 +1,12 @@
 [[language]]
 name = "typescript"
-formatter = { command = "npx", args = ["prettier", "--parser", "typescript"] }
+formatter = { command = "yarn", args = ["prettier", "--stdin", "-w"] }
+
+[language-server.ruby-lsp]
+command = "ruby-lsp"
+config = { diagnostics = true, formatting = true }
+
+[[language]]
+name = "ruby"
+language-servers = ["ruby-lsp"]
+auto-format = true
