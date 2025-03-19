@@ -1,4 +1,5 @@
-# .config/helix/config.toml
+theme = "dracula"
+
 [keys.insert]
 j = { j = "normal_mode" }
 
