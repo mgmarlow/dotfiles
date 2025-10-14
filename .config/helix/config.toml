@@ -5,3 +5,6 @@ j = { j = "normal_mode" }
 
 [editor.file-picker]
 hidden = false
+
+[keys.normal.space]
+l = ":reflow"

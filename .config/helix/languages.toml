@@ -6,7 +6,11 @@ formatter = { command = "yarn", args = ["prettier", "--stdin", "-w"] }
 command = "ruby-lsp"
 config = { diagnostics = true, formatting = true }
 
+[language-server.steep]
+command = "steep"
+args = ["langserver"]
+
 [[language]]
 name = "ruby"
-language-servers = ["ruby-lsp"]
+language-servers = ["ruby-lsp", "steep"]
 auto-format = true
