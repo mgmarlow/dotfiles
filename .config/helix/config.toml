@@ -3,6 +3,9 @@ theme = "dracula"
 [keys.insert]
 j = { j = "normal_mode" }
 
+[editor]
+text-width = 72
+
 [editor.file-picker]
 hidden = false
 
