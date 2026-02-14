@@ -11,3 +11,7 @@ Uses:
 - [gnupg](https://gnupg.org)
 
 tmux is configured to use Emacs-style windowing keybindings.
+
+```sh
+brew bundle --file=./Brewfile
+```
