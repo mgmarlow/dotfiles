@@ -1,5 +1,7 @@
 [user]
   name = Graham Marlow
+#   email = FILLMEIN
+#   signingkey = FILLMEIN
 
 [alias]
   s = status -s
@@ -18,3 +20,9 @@
 
 [merge]
   conflictStyle = zdiff3
+
+# [commit]
+# 	gpgsign = true
+
+# [gpg]
+# 	program = gpg
