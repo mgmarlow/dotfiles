@@ -8,5 +8,6 @@ Uses:
 - [tmux](https://github.com/tmux/tmux/wiki)
 - [delta](https://github.com/dandavison/delta)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [gnupg](https://gnupg.org)
 
 tmux is configured to use Emacs-style windowing keybindings.
