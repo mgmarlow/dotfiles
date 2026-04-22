@@ -9,9 +9,16 @@ Uses:
 - [delta](https://github.com/dandavison/delta)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [Sequoia PGP](https://sequoia-pgp.org/)
+- [Dracula](https://draculatheme.com/)
 
 tmux is configured to use Emacs-style windowing keybindings.
 
 ```sh
 brew bundle --file=./Brewfile
+```
+
+TPM setup:
+
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
