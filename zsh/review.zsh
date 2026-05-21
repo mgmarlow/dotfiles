@@ -53,16 +53,23 @@ review-extract() {
     /^\+\+\+ b\// { file = substr($0, 7); next }
     /^#:/ {
       print "## " file
-      print "Comment: " substr($0, 3)
+      print "Comment:" substr($0, 3)
       print "Context:"
-      for (i = 1; i <= n; i++) print "  " buf[i]
-      print ""
+      # Print last 2 buffered lines (the 2 before the comment)
+      start = (n > 2) ? n - 1 : 1
+      for (i = start; i <= n; i++) print "  " buf[i]
+      pending = 2
+      next
+    }
+    pending > 0 {
+      print "  " $0
+      if (--pending == 0) print ""
       next
     }
     {
-      # Keep a rolling window of the last 5 diff lines
       buf[++n] = $0
-      if (n > 5) { for (i = 1; i < n; i++) buf[i] = buf[i+1]; n = 5 }
+      if (n > 2) { buf[1] = buf[2]; buf[2] = buf[3]; n = 2 }
     }
   ' "$file"
 }
+
