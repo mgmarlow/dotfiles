@@ -6,6 +6,7 @@
 [alias]
   s = status -s
   a = add -A
+  cleanup = !git branch | grep -v 'main' | grep -v '^*' | xargs git branch -d
 
 [core]
   editor = hx
