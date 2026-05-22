@@ -52,23 +52,33 @@ review-extract() {
   awk '
     /^\+\+\+ b\// { file = substr($0, 7); next }
     /^#:/ {
-      print "## " file
-      print "Comment:" substr($0, 3)
+      if (!collecting) {
+        print "## " file
+        print "Comment:"
+        collecting = 1
+      }
+      print " " substr($0, 3)
+      next
+    }
+    collecting {
       print "Context:"
-      # Print last 2 buffered lines (the 2 before the comment)
-      start = (n > 2) ? n - 1 : 1
-      for (i = start; i <= n; i++) print "  " buf[i]
+      if (p1 != "") print "  " p1
+      if (p2 != "") print "  " p2
+      collecting = 0
       pending = 2
-      next
     }
-    pending > 0 {
+    pending {
       print "  " $0
-      if (--pending == 0) print ""
+      if (!--pending) print ""
       next
     }
-    {
-      buf[++n] = $0
-      if (n > 2) { buf[1] = buf[2]; buf[2] = buf[3]; n = 2 }
+    { p1 = p2; p2 = $0 }
+    END {
+      if (collecting) {
+        print "Context:"
+        if (p1 != "") print "  " p1
+        if (p2 != "") print "  " p2
+      }
     }
   ' "$file"
 }
